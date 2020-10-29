@@ -3,22 +3,55 @@
     margin: 0;
 }
 body{
-    background-color: rgb(24, 79, 141);
+    background-color: rgb(208, 209, 211);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 header.cabeceraPrincipal{
     background-color: rgb(67, 101, 253);
 }
+header.cabeceraPrincipal img{
+    width: 30%;
+    display: inline-block;
+}
 header.cabeceraPrincipal h1{
     font-size: 1em;
     padding: 1em;
+    width: 60%;
+    display: inline-block;
+}
+header.cabeceraPrincipal nav{
+    padding-left: 67.5%;
 }
 section.sliderPrincipal{
     background-color: rgb(55, 190, 161);
+    width: 60%;
+    margin: 0 auto;
+    padding: 3em;
+    margin-block-start: 2em;
+    margin-block-end: 2em;
 }
 section.servicios{
+    margin-left: 6em;
+    margin-right: 6em;
+    margin-block-end: 3em;
     background-color: rgb(67, 101, 253);
+    margin-block-start: 2em;
+    padding: 8em;
+}
+section.servicios article.servicio1{
+    width: 45%;
+    display: inline-block;
+}
+section.servicios article.servicio2{
+    width: 40%;
+    display: inline-block;
+}
+section.servicios article.servicio3{
+    width: 5%;
+    display: inline-block;
 }
 footer.piePagina{
     background-color: rgb(67, 101, 253);
+    padding: 1em;
+    padding-left: 75%;
 }
