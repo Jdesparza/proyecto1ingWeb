@@ -6,52 +6,139 @@ body{
     background-color: rgb(208, 209, 211);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-header.cabeceraPrincipal{
+header.cabeceraPrincipal, .servicio1,.piePagina{
     background-color: rgb(67, 101, 253);
 }
 header.cabeceraPrincipal img{
-    width: 30%;
+    max-width: 100%;
+    padding: 1em 1em;
     display: inline-block;
+    vertical-align: top;
 }
 header.cabeceraPrincipal h1{
-    font-size: 1em;
-    padding: 1em;
+    font-size: 1.5em;
     width: 60%;
+    padding-block-start: 1em;
+    padding-left: 2em;
+    text-align: center;
+    display: inline-block;
+    text-shadow: rgb(88, 87, 87) 1px 1px 1px;
+}
+header.cabeceraPrincipal nav.menuPrincipal{
+    padding-left: 34%;
+    padding-block-end: 0.5em;
     display: inline-block;
 }
-header.cabeceraPrincipal nav{
-    padding-left: 67.5%;
+header.cabeceraPrincipal nav.menuPrincipal a{
+    color: #ffffff;
+    padding: 3px 37.95px;
+    text-decoration: none;
 }
-section.sliderPrincipal{
-    background-color: rgb(55, 190, 161);
+header.cabeceraPrincipal nav.menuPrincipal a:hover{
+    background-color: rgb(129, 171, 235);
+}
+section.sliderPrincipal, .moduloPublicidad{
+    background-color: rgb(80, 185, 255);
     width: 60%;
     margin: 0 auto;
-    padding: 3em;
+    padding: 4em;
     margin-block-start: 2em;
     margin-block-end: 2em;
+    text-align: center;
 }
-section.servicios{
-    margin-left: 6em;
-    margin-right: 6em;
+.moduloPublicidad, .serviciosNoticias{
+    width: 80%;
+    margin: 0 auto;
+    padding: 2em;
+    margin-block-start: 3em;
     margin-block-end: 3em;
-    background-color: rgb(67, 101, 253);
-    margin-block-start: 2em;
-    padding: 8em;
 }
-section.servicios article.servicio1{
-    width: 45%;
+.serviciosNoticias{
+    width: 85%;
+    text-align: center;
+}
+.serviciosNoticias article.servicio1{
+    width: 32.97%;
     display: inline-block;
 }
-section.servicios article.servicio2{
-    width: 40%;
-    display: inline-block;
+.serviciosNoticias article.servicio1 h3{
+    font-size: 1.5em;
+    color: rgb(219, 223, 226);
+    padding: 1em;
 }
-section.servicios article.servicio3{
-    width: 5%;
-    display: inline-block;
+.serviciosNoticias article.servicio1 p{
+    text-align: justify;
+    padding: 1.5em 1.5em;
+    color: black;
+    font-size: 1em;
 }
 footer.piePagina{
-    background-color: rgb(67, 101, 253);
+    margin-block-start: 1em;
     padding: 1em;
     padding-left: 75%;
+    color: #ffffff;
+}
+main.contenedor{
+    background-color: rgb(180, 255, 217);
+    width: 82%;
+    margin: 0 auto;
+    margin-block-start: 1em;
+    padding: 1em;
+    text-align: center;
+}
+
+@media only screen and (max-width: 750px){
+    body{
+        background-color: darkred;
+    }
+    header.cabeceraPrincipal img{
+        padding: 0.5em 0.5em;
+    }
+    header.cabeceraPrincipal h1{
+        font-size: 1em;
+        width: 65.5%;
+    }
+    header.cabeceraPrincipal nav.menuPrincipal{
+        padding: 0.5em;
+        width: 0 auto;
+    }
+    header.cabeceraPrincipal nav.menuPrincipal a{
+        padding: 3px 24px;
+    }
+    .moduloPublicidad, .serviciosNoticias{
+        width: 78%;
+    }
+    .serviciosNoticias{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .serviciosNoticias article.servicio1{
+        width: 96%;
+    }
+    footer.piePagina{
+        padding-left: 54%;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    body{
+        background-color: rgb(0, 139, 12);
+    }
+    header.cabeceraPrincipal h1{
+        font-size: 1em;
+        width: 53.5%;
+        padding-left: 1em;
+    }
+    header.cabeceraPrincipal nav.menuPrincipal{
+        width: 96.7%;
+        background-color: rgb(96, 125, 255);
+    }
+    header.cabeceraPrincipal nav.menuPrincipal a{
+        padding: 3px 90px;
+        display: block;
+        text-align: center;
+    }
+    footer.piePagina{
+        padding-left: 37.5%;
+    }
 }
